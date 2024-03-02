@@ -23,7 +23,6 @@ const App = () => {
           throw new Error("Problem getting location data");
 
         const detailsJson = await weatherDetailsApi.json();
-
         setWeath(detailsJson.main);
         setLocation(detailsJson.sys);
         setState(detailsJson.name);

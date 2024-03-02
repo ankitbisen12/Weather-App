@@ -53,25 +53,23 @@ const App = () => {
   const weekDay = dateObject.toLocaleString("en-US", { weekday: "long" });
   const date = `${weekDay},${day}/${month}/${year}`;
   let [hour, minute] = [dateObject.getHours(), dateObject.getMinutes()];
-  const time = `${hour}:${minute}`;
 
+  const padMinutes = (minutes) => {
+    // Convert minutes to a string and add leading zeros
+    if (+minutes < 10) {
+      return String(minutes).padStart(2, "0");
+    }
+    return minutes;
+  };
+
+  const minutes = padMinutes(minute);
+  const time = `${hour}:${minutes}`;
   const evening = hour > 12 ? "PM" : "AM";
+
   return (
     <React.Fragment>
       <Header />
-      <section>
-        {!error && <p>{error}</p>}
-      </section>
-      <div className="box">
-        <div className="inputData">
-          <input
-            type="search"
-            className="inputField"
-            placeholder="Search"
-            onChange={inputChangeHandler}
-          />
-        </div>
-      </div>
+      <section>{!error && <p>{error}</p>}</section>
       <div class="main_div">
         {!weath ? (
           <p className="Para">Invalid city</p>
@@ -80,6 +78,16 @@ const App = () => {
             <div class="cover">
               <div class="crd_contain">
                 <div class="card1">
+                  <div className="box">
+                    <div className="inputData">
+                      <input
+                        type="search"
+                        className="inputField"
+                        placeholder="Search"
+                        onChange={inputChangeHandler}
+                      />
+                    </div>
+                  </div>
                   <div class="content">
                     <div class="innercol1">
                       <div class="country">

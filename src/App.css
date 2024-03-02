@@ -1,25 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap");
 
 .App {
   text-align: center;
 }
-.main_div{
+.main_div {
   animation: inOut 1.5s ease-out forwards;
 }
-.Para{
+.Para {
   text-align: center;
-  color:aliceblue;
+  color: aliceblue;
 }
-.loading{
+.loading {
   text-align: center;
-  color:azure
+  color: azure;
 }
-.box{
+.box {
   margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
 }
 .inputData {
-  margin: auto;
-  width: 50%;
   padding: 10px;
 }
 
@@ -29,9 +29,8 @@ input {
   background-color: rgba(240, 231, 231, 0.521);
   border-radius: 15px;
   border: none;
-  box-shadow:  1px 2px #888888;;
+  box-shadow: 1px 2px #888888;
   outline: none;
-
 }
 .button {
   font: inherit;
@@ -51,8 +50,8 @@ input {
 .button:focus {
   outline: none;
 }
-.insertedHtml{
-   margin-left: 20rem;
+.insertedHtml {
+  margin-left: 25rem;
 }
 crd_contain {
   position: relative;
@@ -83,7 +82,7 @@ crd_contain {
 .innercol1 .country {
   padding: 2px 2px;
   color: rgb(233, 232, 232);
-  font-family: 'Libre Franklin', sans-serif;
+  /* font-family: "Libre Franklin", sans-serif; */
 }
 .country label {
   margin-top: 0px;
@@ -141,7 +140,7 @@ crd_contain {
   margin-bottom: 2rem;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  font-family: 'Libre Franklin', sans-serif;
+  /* font-family: "Libre Franklin", sans-serif; */
 }
 .innercol2 .innerbox {
   display: flex;
@@ -223,14 +222,14 @@ crd_contain {
   }
 }
 
-@media(max-width:850px){
-  .insertedHtml{
+@media (max-width: 850px) {
+  .insertedHtml {
     margin-left: 12rem;
   }
 }
 
 @media (max-width: 768px) {
-  .insertedHtml{
+  .insertedHtml {
     margin-left: 10rem;
   }
   .info--modal {
@@ -269,7 +268,7 @@ crd_contain {
 }
 
 @media (max-width: 580px) {
-  .insertedHtml{
+  .insertedHtml {
     margin-left: 6rem;
   }
   .info--modal {
@@ -278,7 +277,7 @@ crd_contain {
   .overlay {
     height: 136vh;
   }
-  .crd_contain .card1{
+  .crd_contain .card1 {
     width: 87%;
   }
   .crd_contain .card2 {
@@ -297,19 +296,19 @@ crd_contain {
     margin-bottom: 10px;
   }
 }
-@media(max-width: 540px){
-  .insertedHtml{
+@media (max-width: 540px) {
+  .insertedHtml {
     margin-left: 2rem;
   }
   .innercol11 {
     padding: 5px 5px;
   }
-  .innercol1{
+  .innercol1 {
     padding: 5px 5px;
   }
 }
-@media(max-width:480px){
-  .insertedHtml{
+@media (max-width: 480px) {
+  .insertedHtml {
     margin-left: 1.3rem;
   }
 }

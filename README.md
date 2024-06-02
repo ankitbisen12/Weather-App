@@ -1,11 +1,10 @@
-
 ## About the Project
 Technologies Used
 
 - ReactJS
 - CSS
 - HTML
-- 
+
 ## Deployment Link
 https://weather-app-dusky-chi-86.vercel.app/
 
@@ -38,4 +37,3 @@ Start the server
 ```bash
   npm run start
 ```
-
